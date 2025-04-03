@@ -1,3 +1,23 @@
-<resources>
-    <string name="app_name">Tubes_mobpro</string>
+    <resources>
+        <string name="app_name">Tubes_mobpro</string>
+        <string name="bagikan">Bagikan</string>
+        <string name="tentang_aplikasi">Tentang Apikasi</string>
+        <string name="copyright">Hitung BMI merupakan sebuah aplikasi Android untuk menmghitung body mass index (BMI) sehinga seseorang dapat menghitung apakah berat badanya ideal, gemuk atau kurus. \n\nAplikasi ini di buat untuk kelas Pemrogaraman untuk perangkat bergerak 1.\n\nCopyright © 2024-2025 Adre Putra !</string>
+        <string name="BMI_intro">BMI, atau Body Mass Index cara untuk menentukan apakah berat badanmu ideal atau tidak. Cobalah sekarang!</string>
+        <string name="lebar_dada">Lebar Dada</string>
+        <string name="panjang_badan">Tinggi badan</string>
+        <string name="lengan_panjang">lengan panjang</string>
+
+        <string name="lengan_pendek">lengan pendek</string>
+        <string name="cari_ukuran">Cari Ukuran</string>
+        <string name="bmi_x">BMI: %1$.2f</string>
+            <string name= "Ukuran_s">|Lebar dada = 48 cm| Panjang badan = 68cm | panjangan lengan 25cm | ukuran = S|</string>
+            <string name= "Ukuran_m">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 26cm | ukuran = M|</string>
+            <string name= "Ukuran_l">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 26cm | ukuran = L|</string>
+            <string name= "Ukuran_xl">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 26cm | ukuran = XL|</string>
+            <string name= "Ukuran_xxl">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 26cm | ukuran = XXl|</string>
+            <string name= "Ukuran_xxxl">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 26cm | ukuran = 3XL|</string>
+        <string name="input_invalid">Tidak boleh kosong</string>
+        <string name="Custem_Ukuran">Ukuran Coustum</string>
+        <string name="kembali">Kembali</string>
 </resources>
