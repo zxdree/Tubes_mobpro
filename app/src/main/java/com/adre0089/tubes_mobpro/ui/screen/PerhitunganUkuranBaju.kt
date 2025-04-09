@@ -1,5 +1,6 @@
 package com.adre0089.tubes_mobpro.ui.screen
 
+import android.content.res.Configuration
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -18,7 +19,6 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -128,8 +128,11 @@ fun PerhitunganUkuranBaju(navController: NavHostController) {
             TopAppBar(
                 title = { Text(text = stringResource(id = R.string.app_name)) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-                    titleContentColor = MaterialTheme.colorScheme.primary,
+                    containerColor = Color(0xFF001F5B),
+                    titleContentColor = Color.White,
+                    actionIconContentColor = Color.White
+
+
                 ),
                 actions = {
                     IconButton(onClick = { navController.navigate(Screen.About.route) }) {
@@ -150,6 +153,7 @@ fun PerhitunganUkuranBaju(navController: NavHostController) {
 
 
 @Preview(showBackground = true)
+@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES, showBackground = true)
 @Composable
 fun PerhitunganUkuranBajuPriview() {
     Tubes_mobproTheme {

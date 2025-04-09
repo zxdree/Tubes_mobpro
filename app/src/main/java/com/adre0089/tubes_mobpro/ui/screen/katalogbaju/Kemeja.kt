@@ -1,21 +1,44 @@
 package com.adre0089.tubes_mobpro.ui.screen.katalogbaju
 
+import android.content.res.Configuration
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Warning
-import androidx.compose.material.icons.outlined.Info
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.RadioButton
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.ui.*
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
@@ -28,8 +51,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.adre0089.Katalog
 import com.adre0089.tubes_mobpro.R
-import com.adre0089.tubes_mobpro.navigation.Screen
 import com.adre0089.tubes_mobpro.ui.theme.Tubes_mobproTheme
+
 
 @Composable
 fun ScreenContent(katalog: Katalog, modifier: Modifier = Modifier) {
@@ -53,6 +76,11 @@ fun ScreenContent(katalog: Katalog, modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.spacedBy(12.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Text(
+            text = stringResource(id = R.string.kemeja),
+            style = MaterialTheme.typography.bodyLarge,
+            modifier = Modifier.fillMaxWidth()
+        )
         OutlinedTextField(
             value = lebarDada,
             onValueChange = { lebarDada = it },
@@ -111,7 +139,11 @@ fun ScreenContent(katalog: Katalog, modifier: Modifier = Modifier) {
                 selectedImage = getimage(panjangBadan.toFloat(), panjangBadan.toFloat(), katalogBaju == radioOptions[0])
             },
             modifier = Modifier.padding(top = 8.dp),
-            contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
+            contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF001F5B),  // Warna latar (biru dongker)
+                contentColor = Color.White           // Warna teks/icon di dalam button
+            )
         ) {
             Text(text = stringResource(R.string.cari_ukuran))
         }
@@ -233,21 +265,18 @@ fun Kemeja(navController: NavHostController) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                             contentDescription = stringResource(R.string.kembali),
-                            tint = MaterialTheme.colorScheme.primary
+                            tint = Color.White,
 
                         )
                     }
                 },
                 title = { Text(text = stringResource(id = R.string.Kemeja)) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-                    titleContentColor = MaterialTheme.colorScheme.primary,
+                    containerColor = Color(0xFF001F5B),
+                    titleContentColor = Color.White,
+                    actionIconContentColor = Color.White
                 ),
-                actions = {
-                    IconButton(onClick = { navController.navigate(Screen.About.route) }) {
-                        Icon(imageVector = Icons.Outlined.Info, contentDescription = stringResource(R.string.tentang_aplikasi))
-                    }
-                }
+
 
             )
         }
@@ -257,6 +286,7 @@ fun Kemeja(navController: NavHostController) {
 }
 
 @Preview(showBackground = true)
+@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES, showBackground = true)
 @Composable
 fun KemejaScreenPreview() {
     Tubes_mobproTheme {

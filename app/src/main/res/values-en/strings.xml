@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tubes_mobpro</string>
+    <string name="Kemeja">Shirt_Catalog</string>
+    <string name="bagikan">Share</string>
+    <string name="tentang_aplikasi">About App</string>
+    <string name="copyright">This app helps users find clothing size categories for T-shirts, jackets, and shirts.\n\nThis app was created for the Mobile Programming 1 course.\n\nCopyright © 2024-2025 Adre Putra!</string>
+    <string name="Batas_input">Input Limit</string>
+    <string name="baju">Chest width = 48cm to 58cm\nBody length = 68cm to 75.5cm\nSize = S to 3XL</string>
+    <string name="kemeja">Chest width = 50cm to 60cm\nBody length = 68cm to 78cm\nSize = S to 3XL</string>
+    <string name="C_jaket">Coach Jacket = Chest width = 53cm to 61cm, Body length = 65cm to 73cm\n</string>
+    <string name="h_jaket">Hoodie Jacket = Chest width = 54cm to 62cm, Body length = 64cm to 72cm\n</string>
+    <string name="v_jaket">Varsity Jacket = Chest width = 54cm to 62cm, Body length = 65cm to 73cm</string>
+    <string name="Ukuran">Size = S to XXL</string>
+    <string name="lebar_dada">Chest Width</string>
+    <string name="panjang_badan">Height</string>
+    <string name="lengan_panjang">Long Sleeve</string>
+    <string name="lengan_pendek">Short Sleeve</string>
+    <string name="cari_ukuran">Find Size</string>
+
+    <string name="Ukuran_s">|Chest width = 48 cm| Body length = 68cm | Sleeve length = 25cm | Size = S|</string>
+    <string name="Ukuran_m">|Chest width = 50 cm| Body length = 70cm | Sleeve length = 26cm | Size = M|</string>
+    <string name="Ukuran_l">|Chest width = 54 cm| Body length = 72cm | Sleeve length = 27cm | Size = L|</string>
+    <string name="Ukuran_xl">|Chest width = 54.5 cm| Body length = 74cm | Sleeve length = 28cm | Size = XL|</string>
+    <string name="Ukuran_xxl">|Chest width = 56 cm| Body length = 75cm | Sleeve length = 29.5cm | Size = XXL|</string>
+    <string name="Ukuran_xxxl">|Chest width = 58 cm| Body length = 75.5cm | Sleeve length = 31cm | Size = 3XL|</string>
+
+    <string name="Ukuran_s_LP">|Chest width = 48 cm| Body length = 68cm | Sleeve length = 58cm | Size = S|</string>
+    <string name="Ukuran_m_LP">|Chest width = 50 cm| Body length = 70cm | Sleeve length = 59cm | Size = M|</string>
+    <string name="Ukuran_l_LP">|Chest width = 54 cm| Body length = 72cm | Sleeve length = 60cm | Size = L|</string>
+    <string name="Ukuran_xl_LP">|Chest width = 54.5 cm| Body length = 74cm | Sleeve length = 61cm | Size = XL|</string>
+    <string name="Ukuran_xxl_LP">|Chest width = 56 cm| Body length = 75cm | Sleeve length = 61.5cm | Size = XXL|</string>
+    <string name="Ukuran_xxxl_LP">|Chest width = 58 cm| Body length = 75.5cm | Sleeve length = 62cm | Size = 3XL|</string>
+
+    <string name="k_s_lp">|Chest width = 50 cm| Body length = 68cm | Sleeve length = 24.5cm | Size = S|</string>
+    <string name="k_m_lp">|Chest width = 52 cm| Body length = 70cm | Sleeve length = 24cm | Size = M|</string>
+    <string name="k_l_lp">|Chest width = 54 cm| Body length = 72cm | Sleeve length = 26cm | Size = L|</string>
+    <string name="k_xl_lp">|Chest width = 56 cm| Body length = 74cm | Sleeve length = 26.5cm | Size = XL|</string>
+    <string name="k_xxl_lp">|Chest width = 58 cm| Body length = 76cm | Sleeve length = 27cm | Size = XXL|</string>
+    <string name="k_xxxl_lp">|Chest width = 60 cm| Body length = 78cm | Sleeve length = 27.5cm | Size = 3XL|</string>
+
+    <string name="k_s_lpj">|Chest width = 50 cm| Body length = 68cm | Sleeve length = 58cm | Size = S|</string>
+    <string name="k_m_lpj">|Chest width = 52 cm| Body length = 70cm | Sleeve length = 59cm | Size = M|</string>
+    <string name="k_l_lpj">|Chest width = 54 cm| Body length = 72cm | Sleeve length = 60cm | Size = L|</string>
+    <string name="k_xl_lpj">|Chest width = 56 cm| Body length = 74cm | Sleeve length = 61cm | Size = XL|</string>
+    <string name="K_xxl_lpj">|Chest width = 58 cm| Body length = 76cm | Sleeve length = 62cm | Size = XXL|</string>
+    <string name="k_xxxl_lpj">|Chest width = 60 cm| Body length = 78cm | Sleeve length = 63cm | Size = 3XL|</string>
+
+    <string name="c_s">|Chest width = 53 cm| Body length = 65cm | Sleeve length = 66cm | Size = S|</string>
+    <string name="c_m">|Chest width = 55 cm| Body length = 67cm | Sleeve length = 66cm | Size = M|</string>
+    <string name="c_l">|Chest width = 57 cm| Body length = 69cm | Sleeve length = 67cm | Size = L|</string>
+    <string name="c_xl">|Chest width = 59 cm| Body length = 71cm | Sleeve length = 67cm | Size = XL|</string>
+    <string name="c_xxl">|Chest width = 61cm| Body length = 73cm | Sleeve length = 68cm | Size = XXL|</string>
+
+    <string name="h_s">|Chest width = 54 cm| Body length = 64cm | Sleeve length = 63cm | Size = S|</string>
+    <string name="h_m">|Chest width = 56 cm| Body length = 66cm | Sleeve length = 64cm | Size = M|</string>
+    <string name="h_l">|Chest width = 58 cm| Body length = 68cm | Sleeve length = 65cm | Size = L|</string>
+    <string name="h_xl">|Chest width = 60 cm| Body length = 70cm | Sleeve length = 66cm | Size = XL|</string>
+    <string name="h_xxl">|Chest width = 62cm| Body length = 72cm | Sleeve length = 67cm | Size = XXL|</string>
+
+    <string name="v_s">|Chest width = 54 cm| Body length = 65cm | Sleeve length = 66cm | Size = S|</string>
+    <string name="v_m">|Chest width = 56 cm| Body length = 67cm | Sleeve length = 66cm | Size = M|</string>
+    <string name="v_l">|Chest width = 58 cm| Body length = 69cm | Sleeve length = 67cm | Size = L|</string>
+    <string name="v_xl">|Chest width = 60 cm| Body length = 71cm | Sleeve length = 67cm | Size = XL|</string>
+    <string name="v_xxl">|Chest width = 62cm| Body length = 73cm | Sleeve length = 68cm | Size = XXL|</string>
+
+    <string name="input_invalid_LP">Cannot be empty</string>
+    <string name="Custem_Ukuran">Custom Size</string>
+    <string name="kembali">Back</string>
+</resources>
