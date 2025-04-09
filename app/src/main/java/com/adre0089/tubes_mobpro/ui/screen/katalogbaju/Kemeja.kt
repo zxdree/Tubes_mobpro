@@ -1,4 +1,4 @@
-package com.adre0089.tubes_mobpro.ui.screen
+package com.adre0089.tubes_mobpro.ui.screen.katalogbaju
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -15,7 +15,7 @@ import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.*
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
+
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
@@ -142,22 +142,22 @@ fun GenderOption(label: String, isSelected: Boolean, modifier: Modifier) {
 private fun getLategori(lebarDada: Float, panjangTubuh: Float, lengan: Boolean): Int {
     return if (lengan) {
         when {
-            lebarDada >= 58 || panjangTubuh >= 75.5 -> R.string.Ukuran_xxxl
-            lebarDada >= 56 || panjangTubuh >= 75 -> R.string.Ukuran_xxl
-            lebarDada >= 54.5 || panjangTubuh >= 74 -> R.string.Ukuran_xl
-            lebarDada >= 54 || panjangTubuh >= 72 -> R.string.Ukuran_l
-            lebarDada >= 50 || panjangTubuh >= 70 -> R.string.Ukuran_m
-            lebarDada >= 48 || panjangTubuh >= 68 -> R.string.Ukuran_s
+            lebarDada >= 60 || panjangTubuh >= 78 -> R.string.k_s_lp
+            lebarDada >= 58 || panjangTubuh >= 76 -> R.string.k_m_lp
+            lebarDada >= 56 || panjangTubuh >= 74 -> R.string.k_l_lp
+            lebarDada >= 54 || panjangTubuh >= 72 -> R.string.k_xl_lp
+            lebarDada >= 52 || panjangTubuh >= 70 -> R.string.k_xxl_lp
+            lebarDada >= 50 || panjangTubuh >= 68 -> R.string.k_xxl_lp
             else -> R.string.Custem_Ukuran
         }
     } else {
         when{
-            lebarDada >= 58 || panjangTubuh >= 75.5 -> R.string.Ukuran_xxxl_LP
-            lebarDada >= 56 || panjangTubuh >= 75 -> R.string.Ukuran_xxl_LP
-            lebarDada >= 54.5 || panjangTubuh >= 74 -> R.string.Ukuran_xl_LP
-            lebarDada >= 54 || panjangTubuh >= 72 -> R.string.Ukuran_l_LP
-            lebarDada >= 50 || panjangTubuh >= 70 -> R.string.Ukuran_m_LP
-            lebarDada >= 48 || panjangTubuh >= 68 -> R.string.Ukuran_s_LP
+            lebarDada >= 60 || panjangTubuh >= 78 -> R.string.k_s_lpj
+            lebarDada >= 58 || panjangTubuh >= 76 -> R.string.k_m_lpj
+            lebarDada >= 56 || panjangTubuh >= 74 -> R.string.k_l_lpj
+            lebarDada >= 54 || panjangTubuh >= 72 -> R.string.k_xl_lpj
+            lebarDada >= 52 || panjangTubuh >= 70 -> R.string.K_xxl_lpj
+            lebarDada >= 50 || panjangTubuh >= 68 -> R.string.k_xxxl_lpj
             else->R.string.Custem_Ukuran
         }
 
@@ -167,22 +167,22 @@ private fun getLategori(lebarDada: Float, panjangTubuh: Float, lengan: Boolean):
 private fun getimage(lebarDada: Float, panjangTubuh: Float, isMale: Boolean): Int {
     return if (isMale) {
         when {
-            lebarDada >= 58 || panjangTubuh >= 75.5 -> R.drawable.ukuran_xxxl
-            lebarDada >= 56 || panjangTubuh >= 75 -> R.drawable.ukuran_xxl
-            lebarDada >= 54 || panjangTubuh >= 74 -> R.drawable.ukuran_xl
-            lebarDada >= 54.5 || panjangTubuh >= 72 -> R.drawable.ukuran_l
-            lebarDada >= 50 || panjangTubuh >= 70 -> R.drawable.ukuran_m
-            lebarDada >= 48 || panjangTubuh >= 68 -> R.drawable.ukuran_s
+            lebarDada >= 60 || panjangTubuh >= 78 -> R.drawable.k_lpj
+            lebarDada >= 58 || panjangTubuh >= 76 -> R.drawable.k_lpj
+            lebarDada >= 56 || panjangTubuh >= 74 -> R.drawable.k_lpj
+            lebarDada >= 54 || panjangTubuh >= 72 -> R.drawable.k_lpj
+            lebarDada >= 52 || panjangTubuh >= 70 -> R.drawable.k_lpj
+            lebarDada >= 50 || panjangTubuh >= 68 -> R.drawable.k_lpj
             else -> R.string.Custem_Ukuran
         }
     } else {
         when{
-            lebarDada >= 58 || panjangTubuh >= 75.5 -> R.drawable.ukuran_xxxl_lp
-            lebarDada >= 56 || panjangTubuh >= 75 -> R.drawable.ukuran_xxl_lp
-            lebarDada >= 54 || panjangTubuh >= 74 -> R.drawable.ukuran_xl_lp
-            lebarDada >= 54.5 || panjangTubuh >= 72 -> R.drawable.ukuran_l_lp
-            lebarDada >= 50 || panjangTubuh >= 70 -> R.drawable.ukuran_m_lp
-            lebarDada >= 48 || panjangTubuh >= 68 -> R.drawable.ukuran_s_lp
+            lebarDada >= 60 || panjangTubuh >= 78 -> R.drawable.k_lp
+            lebarDada >= 58 || panjangTubuh >= 76 ->R.drawable.k_lp
+            lebarDada >= 56 || panjangTubuh >= 74 -> R.drawable.k_lp
+            lebarDada >= 54 || panjangTubuh >= 72 -> R.drawable.k_lp
+            lebarDada >= 52 || panjangTubuh >= 70 -> R.drawable.k_lp
+            lebarDada >= 50 || panjangTubuh >= 68 -> R.drawable.k_lp
             else->R.string.Custem_Ukuran
         }
     }
@@ -208,7 +208,7 @@ fun ErorrHit(isError: Boolean) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainScreen(navController: NavHostController) {
+fun Kemeja(navController: NavHostController) {
     val data = listOf(
         Katalog("Ukuran_s", R.drawable.ukuran_s),
         Katalog("Ukuran_m", R.drawable.ukuran_m),
@@ -223,14 +223,8 @@ fun MainScreen(navController: NavHostController) {
         Katalog("Ukuran_xl_lp", R.drawable.ukuran_xl_lp),
         Katalog("Ukuran_xxl_lp", R.drawable.ukuran_xxl_lp),
         Katalog("Ukuran_xxxl_lp", R.drawable.ukuran_xxxl_lp),
-
-
-
-
-
-
-    )
-     val katalogkategori = data[0]
+        )
+    val katalogdata = data[0]
     Scaffold(
         topBar = {
             TopAppBar(
@@ -244,7 +238,7 @@ fun MainScreen(navController: NavHostController) {
                         )
                     }
                 },
-                title = { Text(text = stringResource(id = R.string.app_name)) },
+                title = { Text(text = stringResource(id = R.string.Kemeja)) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer,
                     titleContentColor = MaterialTheme.colorScheme.primary,
@@ -258,14 +252,14 @@ fun MainScreen(navController: NavHostController) {
             )
         }
     ) { innerPadding ->
-        ScreenContent(katalog = katalogkategori, Modifier.padding(innerPadding))
+        ScreenContent(katalog = katalogdata, Modifier.padding(innerPadding))
     }
 }
 
 @Preview(showBackground = true)
 @Composable
-fun MainScreenPreview() {
+fun KemejaScreenPreview() {
     Tubes_mobproTheme {
-        MainScreen(rememberNavController())
+        Kemeja(rememberNavController())
     }
 }

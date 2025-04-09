@@ -1,5 +1,6 @@
     <resources>
         <string name="app_name">Tubes_mobpro</string>
+        <string name="Kemeja">Kalaog_kemeja</string>
         <string name="bagikan">Bagikan</string>
         <string name="tentang_aplikasi">Tentang Apikasi</string>
         <string name="copyright">Hitung BMI merupakan sebuah aplikasi Android untuk menmghitung body mass index (BMI) sehinga seseorang dapat menghitung apakah berat badanya ideal, gemuk atau kurus. \n\nAplikasi ini di buat untuk kelas Pemrogaraman untuk perangkat bergerak 1.\n\nCopyright © 2024-2025 Adre Putra !</string>
@@ -7,17 +8,58 @@
         <string name="lebar_dada">Lebar Dada</string>
         <string name="panjang_badan">Tinggi badan</string>
         <string name="lengan_panjang">lengan panjang</string>
-
         <string name="lengan_pendek">lengan pendek</string>
         <string name="cari_ukuran">Cari Ukuran</string>
         <string name="bmi_x">BMI: %1$.2f</string>
             <string name= "Ukuran_s">|Lebar dada = 48 cm| Panjang badan = 68cm | panjangan lengan 25cm | ukuran = S|</string>
             <string name= "Ukuran_m">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 26cm | ukuran = M|</string>
-            <string name= "Ukuran_l">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 26cm | ukuran = L|</string>
-            <string name= "Ukuran_xl">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 26cm | ukuran = XL|</string>
-            <string name= "Ukuran_xxl">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 26cm | ukuran = XXl|</string>
-            <string name= "Ukuran_xxxl">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 26cm | ukuran = 3XL|</string>
-        <string name="input_invalid">Tidak boleh kosong</string>
+            <string name= "Ukuran_l">|Lebar dada = 54 cm| Panjang badan = 72cm | panjangan lengan 27cm | ukuran = L|</string>
+            <string name= "Ukuran_xl">|Lebar dada = 54 cm| Panjang badan = 74cm | panjangan lengan 28cm | ukuran = XL|</string>
+            <string name= "Ukuran_xxl">|Lebar dada = 56 cm| Panjang badan = 75cm | panjangan lengan 29.5cm | ukuran = XXl|</string>
+            <string name= "Ukuran_xxxl">|Lebar dada = 58 cm| Panjang badan = 75.5cm | panjangan lengan 31cm | ukuran = 3XL|</string>
+
+        <string name= "Ukuran_s_LP">|Lebar dada = 48 cm| Panjang badan = 68cm | panjangan lengan 58cm | ukuran = S|</string>
+        <string name= "Ukuran_m_LP">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 59cm | ukuran = M|</string>
+        <string name= "Ukuran_l_LP">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 60cm | ukuran = L|</string>
+        <string name= "Ukuran_xl_LP">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 61cm | ukuran = XL|</string>
+        <string name= "Ukuran_xxl_LP">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 61,5cm | ukuran = XXl|</string>
+        <string name= "Ukuran_xxxl_LP">|Lebar dada = 50 cm| Panjang badan = 70cm | panjangan lengan 62cm | ukuran = 3XL|</string>
+
+        <string name= "k_s_lp">|Lebar dada = 50 cm| Panjang badan = 68cm | panjangan lengan 24.5cm | ukuran = S|</string>
+        <string name= "k_m_lp">|Lebar dada = 52 cm| Panjang badan = 70cm | panjangan lengan 24cm | ukuran = M|</string>
+        <string name= "k_l_lp">|Lebar dada = 54 cm| Panjang badan = 72cm | panjangan lengan 26cm | ukuran = L|</string>
+        <string name= "k_xl_lp">|Lebar dada = 56 cm| Panjang badan = 74cm | panjangan lengan 26.5cm | ukuran = XL|</string>
+        <string name= "k_xxl_lp">|Lebar dada = 58 cm| Panjang badan = 76cm | panjangan lengan 27cm | ukuran = XXl|</string>
+        <string name= "k_xxxl_lp">|Lebar dada = 60 cm| Panjang badan = 78cm | panjangan lengan 27.5cm | ukuran = 3XL|</string>
+
+        <string name= "k_s_lpj">|Lebar dada = 50 cm| Panjang badan = 68cm | panjangan lengan 58cm | ukuran = S|</string>
+        <string name= "k_m_lpj">|Lebar dada = 52 cm| Panjang badan = 70cm | panjangan lengan 59cm | ukuran = M|</string>
+        <string name= "k_l_lpj">|Lebar dada = 54 cm| Panjang badan = 72cm | panjangan lengan 60cm | ukuran = L|</string>
+        <string name= "k_xl_lpj">|Lebar dada = 56 cm| Panjang badan = 74cm | panjangan lengan 61cm | ukuran = XL|</string>
+        <string name= "K_xxl_lpj">|Lebar dada = 58 cm| Panjang badan = 76cm | panjangan lengan 62cm | ukuran = XXl|</string>
+        <string name= "k_xxxl_lpj">|Lebar dada = 60 cm| Panjang badan = 78cm | panjangan lengan 63cm | ukuran = 3XL|</string>
+
+            <string name= "c_s">|Lebar dada = 53 cm| Panjang badan = 65cm | panjangan lengan 66cm | ukuran = S|</string>
+            <string name= "c_m">|Lebar dada = 55 cm| Panjang badan = 67cm | panjangan lengan 66cm | ukuran = M|</string>
+            <string name= "c_l">|Lebar dada = 57 cm| Panjang badan = 69cm | panjangan lengan 67cm | ukuran = L|</string>
+            <string name= "c_xl">|Lebar dada = 59 cm| Panjang badan = 71cm | panjangan lengan 67cm | ukuran = XL|</string>
+            <string name= "c_xxl">|Lebar dada = 61cm| Panjang badan = 73m | panjangan lengan 68cm | ukuran = XXl|</string>
+
+            <string name= "h_s">|Lebar dada = 54 cm| Panjang badan = 64cm | panjangan lengan 63cm | ukuran = S|</string>
+            <string name= "h_m">|Lebar dada = 56 cm| Panjang badan = 66cm | panjangan lengan 64cm | ukuran = M|</string>
+            <string name= "h_l">|Lebar dada = 58 cm| Panjang badan = 68cm | panjangan lengan 65cm | ukuran = L|</string>
+            <string name= "h_xl">|Lebar dada = 60 cm| Panjang badan = 70cm | panjangan lengan 66cm | ukuran = XL|</string>
+            <string name= "h_xxl">|Lebar dada = 62cm| Panjang badan = 72m | panjangan lengan 67cm | ukuran = XXl|</string>
+
+            <string name= "v_s">|Lebar dada = 54 cm| Panjang badan = 65cm | panjangan lengan 66cm | ukuran = S|</string>
+            <string name= "v_m">|Lebar dada = 56 cm| Panjang badan = 67cm | panjangan lengan 66cm | ukuran = M|</string>
+            <string name= "v_l">|Lebar dada = 58 cm| Panjang badan = 69cm | panjangan lengan 67cm | ukuran = L|</string>
+            <string name= "v_xl">|Lebar dada = 60 cm| Panjang badan = 71cm | panjangan lengan 67cm | ukuran = XL|</string>
+            <string name= "v_xxl">|Lebar dada = 62cm| Panjang badan = 73m | panjangan lengan 68cm | ukuran = XXl|</string>
+
+
+        <string name="input_invalid_LP">Tidak boleh kosong</string>
         <string name="Custem_Ukuran">Ukuran Coustum</string>
         <string name="kembali">Kembali</string>
+        <string name="gambar">Gambar %1$s</string>
 </resources>
