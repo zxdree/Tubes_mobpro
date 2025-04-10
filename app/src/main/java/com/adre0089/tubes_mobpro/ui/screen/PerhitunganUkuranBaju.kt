@@ -67,7 +67,7 @@ fun HomeConten(
                 Box(modifier = Modifier.fillMaxWidth()) {
                     Image(
                         painter = painterResource(id = nav.imagesResId),
-                        contentDescription = nav.nama,
+                        contentDescription = stringResource(R.string.pengukuran_Baju),
                         contentScale = ContentScale.Crop,
                         modifier = Modifier
                             .fillMaxWidth()
@@ -83,7 +83,7 @@ fun HomeConten(
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
-                            text = nav.nama,
+                            text = stringResource(nav.nama),
                             color = Color.White,
                             fontWeight = FontWeight.Bold
                         )
@@ -115,9 +115,9 @@ fun HomeConten(
 @Composable
 fun PerhitunganUkuranBaju(navController: NavHostController) {
     val data = listOf(
-       Nav(Screen.Home.route, "Pengukur baju kaos",R.drawable.baju),
-       Nav(Screen.Kalaog_kemeja.route, "pengukur Kemeja", R.drawable.kemeja),
-       Nav(Screen.katalog_Jaket.route, "Penukur Jaket", R.drawable.jajet)
+       Nav(Screen.Home.route, R.string.pengukuran_Baju,R.drawable.baju),
+       Nav(Screen.Kalaog_kemeja.route, R.string.pengukuran_kemeja, R.drawable.kemeja),
+       Nav(Screen.katalog_Jaket.route, R.string.pengukuran_jekat, R.drawable.jajet)
        
 
     )

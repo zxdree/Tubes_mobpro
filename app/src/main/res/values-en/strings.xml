@@ -13,7 +13,7 @@
     <string name="v_jaket">Varsity Jacket = Chest width = 54cm to 62cm, Body length = 65cm to 73cm</string>
     <string name="Ukuran">Size = S to XXL</string>
     <string name="lebar_dada">Chest Width</string>
-    <string name="panjang_badan">Height</string>
+    <string name="panjang_badan">Body length </string>
     <string name="lengan_panjang">Long Sleeve</string>
     <string name="lengan_pendek">Short Sleeve</string>
     <string name="cari_ukuran">Find Size</string>
@@ -64,6 +64,9 @@
     <string name="v_xl">|Chest width = 60 cm| Body length = 71cm | Sleeve length = 67cm | Size = XL|</string>
     <string name="v_xxl">|Chest width = 62cm| Body length = 73cm | Sleeve length = 68cm | Size = XXL|</string>
 
+    <string name="pengukuran_Baju">T-Shirt Measurement</string>
+    <string name="pengukuran_kemeja">Shirt Measurement</string>
+    <string name="pengukuran_jekat">Jacket Measurement</string>
     <string name="input_invalid_LP">Cannot be empty</string>
     <string name="Custem_Ukuran">Custom Size</string>
     <string name="kembali">Back</string>

@@ -62,6 +62,9 @@
             <string name= "v_xl">|Lebar dada = 60 cm| Panjang badan = 71cm | panjangan lengan 67cm | ukuran = XL|</string>
             <string name= "v_xxl">|Lebar dada = 62cm| Panjang badan = 73m | panjangan lengan 68cm | ukuran = XXl|</string>
 
+        <string name="pengukuran_Baju">Pengukuran Baju kaos</string>
+        <string name="pengukuran_kemeja">Pengukuran Kemeja</string>
+        <string name="pengukuran_jekat">Pengukuran Jaket</string>
 
         <string name="input_invalid_LP">Tidak boleh kosong</string>
         <string name="Custem_Ukuran">Ukuran Coustum</string>

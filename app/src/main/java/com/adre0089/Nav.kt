@@ -4,6 +4,6 @@ import androidx.annotation.DrawableRes
 
 data class Nav(
     val arah : String,
-    val nama : String,
+    val nama : Int,
     @DrawableRes val imagesResId: Int
 )

@@ -7,7 +7,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.adre0089.tubes_mobpro.ui.screen.AboutScreen
-import com.adre0089.tubes_mobpro.ui.screen.MainScreen
+import com.adre0089.tubes_mobpro.ui.screen.Baju
+
 import com.adre0089.tubes_mobpro.ui.screen.PerhitunganUkuranBaju
 import com.adre0089.tubes_mobpro.ui.screen.katalogbaju.Jaket
 import com.adre0089.tubes_mobpro.ui.screen.katalogbaju.Kemeja
@@ -24,7 +25,7 @@ fun SetupNavGraph(navController : NavHostController = rememberNavController()){
             PerhitunganUkuranBaju(navController)
         }
         composable(route = Screen.Home.route){
-            MainScreen(navController)
+            Baju(navController)
         }
         composable(route = Screen.About.route){
             AboutScreen(navController)

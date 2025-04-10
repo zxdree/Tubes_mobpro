@@ -11,9 +11,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Warning
@@ -71,7 +73,9 @@ fun ScreenContent(katalog: Katalog, modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
             .fillMaxSize()
+            .verticalScroll(rememberScrollState())
             .padding(16.dp),
+
         verticalArrangement = Arrangement.spacedBy(12.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -244,7 +248,7 @@ fun ErorrHit(isError: Boolean) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainScreen(navController: NavHostController) {
+fun Baju(navController: NavHostController) {
     val data = listOf(
         Katalog("Ukuran_s", R.drawable.ukuran_s),
         Katalog("Ukuran_m", R.drawable.ukuran_m),
@@ -300,6 +304,6 @@ fun MainScreen(navController: NavHostController) {
 @Composable
 fun MainScreenPreview() {
     Tubes_mobproTheme {
-        MainScreen(rememberNavController())
+        Baju(rememberNavController())
     }
 }
