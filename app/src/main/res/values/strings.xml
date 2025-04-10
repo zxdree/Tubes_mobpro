@@ -1,6 +1,9 @@
     <resources>
         <string name="app_name">Tubes_mobpro</string>
         <string name="Kemeja">Kalaog_kemeja</string>
+        <string name="baju_b">katalog_baju</string>
+        <string name="jaket_t">Katalog_jaket</string>
+        <string name="bagikan_template">%1$s </string>
         <string name="bagikan">Bagikan</string>
         <string name="tentang_aplikasi">Tentang Apikasi</string>
         <string name="copyright">Aplikasi ini tentang untuk oranmg mencari katagori ujuran baju kaos, jaket dan juga kemeja . \n\nAplikasi ini di buat untuk kelas Pemrogaraman untuk perangkat bergerak 1.\n\nCopyright © 2024-2025 Adre Putra !</string>

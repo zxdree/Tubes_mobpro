@@ -1,5 +1,7 @@
 package com.adre0089.tubes_mobpro.ui.screen.katalogbaju
 
+import android.content.Context
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -41,6 +43,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
@@ -69,7 +72,7 @@ fun ScreenContent(katalog: Katalog, modifier: Modifier = Modifier) {
     var katalogBaju by rememberSaveable { mutableStateOf(radioOptions[0]) }
     var kategori by rememberSaveable { mutableIntStateOf(0) }
     var selectedImage by rememberSaveable { mutableIntStateOf(R.drawable.ukuran_s) }
-
+    val context = LocalContext.current
 
     Column(
         modifier = modifier
@@ -162,6 +165,21 @@ fun ScreenContent(katalog: Katalog, modifier: Modifier = Modifier) {
                 style = MaterialTheme.typography.headlineLarge,
                 fontSize = 18.5.sp
             )
+            Button(
+                onClick = {
+                    shareData(
+                        context = context,
+                        massage = context.getString(
+                            R.string.bagikan_template,
+                            context.getString(kategori).uppercase()
+                        )
+                    )
+                },
+                modifier = Modifier.padding(top = 8.dp),
+                contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
+            ) {
+                Text(text = stringResource(R.string.bagikan))
+            }
         }
     }
 }
@@ -220,6 +238,15 @@ private fun getimage(lebarDada: Float, panjangTubuh: Float, isMale: Boolean): In
             lebarDada >= 50 || panjangTubuh >= 68 -> R.drawable.k_lp
             else->R.string.Custem_Ukuran
         }
+    }
+}
+private fun shareData(context: Context, massage: String) {
+    val shareIntent = Intent(Intent.ACTION_SEND).apply {
+        type = "text/plain"
+        putExtra(Intent.EXTRA_TEXT, massage)
+    }
+    if (shareIntent.resolveActivity(context.packageManager) != null) {
+        context.startActivity(shareIntent)
     }
 }
 

@@ -1,5 +1,7 @@
 package com.adre0089.tubes_mobpro.ui.screen.katalogbaju
 
+import android.content.Context
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -40,6 +42,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
@@ -68,7 +71,7 @@ fun JaketScreenContent(katalog: Katalog, modifier: Modifier = Modifier) {
     var selectedText  by rememberSaveable { mutableStateOf("") }
     var kategori by rememberSaveable { mutableIntStateOf(0) }
     var selectedImage by rememberSaveable { mutableIntStateOf(R.drawable.ukuran_s) }
-
+    val context = LocalContext.current
 
     Column(
         modifier = modifier
@@ -204,6 +207,21 @@ fun JaketScreenContent(katalog: Katalog, modifier: Modifier = Modifier) {
                 style = MaterialTheme.typography.headlineLarge,
                 fontSize = 18.5.sp
             )
+            Button(
+                onClick = {
+                    shareData(
+                        context = context,
+                        massage = context.getString(
+                            R.string.bagikan_template,
+                            context.getString(kategori).uppercase()
+                        )
+                    )
+                },
+                modifier = Modifier.padding(top = 8.dp),
+                contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
+            ) {
+                Text(text = stringResource(R.string.bagikan))
+            }
         }
     }
 }
@@ -245,6 +263,15 @@ private fun getLategori(lebarDada: Float, panjangTubuh: Float, jenisJaket: Strin
       }
       else -> R.string.Custem_Ukuran
   }
+}
+private fun shareData(context: Context, massage: String) {
+    val shareIntent = Intent(Intent.ACTION_SEND).apply {
+        type = "text/plain"
+        putExtra(Intent.EXTRA_TEXT, massage)
+    }
+    if (shareIntent.resolveActivity(context.packageManager) != null) {
+        context.startActivity(shareIntent)
+    }
 }
 
 private fun getImage(lebarDada: Float, panjangTubuh: Float, jenisJaket: String): Int {
@@ -339,7 +366,7 @@ fun Jaket(navController: NavHostController) {
                         )
                     }
                 },
-                title = { Text(text = stringResource(id = R.string.Kemeja)) },
+                title = { Text(text = stringResource(id = R.string.jaket_t)) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
                     containerColor = Color(0xFF001F5B),
                     titleContentColor = Color.White,

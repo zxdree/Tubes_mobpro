@@ -2,6 +2,9 @@
 <resources>
     <string name="app_name">Tubes_mobpro</string>
     <string name="Kemeja">Shirt_Catalog</string>
+    <string name="baju_b">T-Shirt_Catalog</string>
+    <string name="jaket_t">Jacket_Catalog</string>
+    <string name="bagikan_template">%1$s </string>
     <string name="bagikan">Share</string>
     <string name="tentang_aplikasi">About App</string>
     <string name="copyright">This app helps users find clothing size categories for T-shirts, jackets, and shirts.\n\nThis app was created for the Mobile Programming 1 course.\n\nCopyright © 2024-2025 Adre Putra!</string>
